@@ -6,8 +6,8 @@ fun main(): Unit {
 
     println( addNumbers(2,5) )
     divide(4,2)
-
     EvenOrOdd(11)
+    printSum(10);
 
 }
 
@@ -34,6 +34,14 @@ fun EvenOrOdd( num : Int){
         println("even number")
     else
         println("odd number")
+}
+
+fun printSum( num : Int ){
+    var sum : Int = 0;
+    for( x in 1..num ){
+        sum = sum + x;
+    }
+    println(sum)
 }
 
 
